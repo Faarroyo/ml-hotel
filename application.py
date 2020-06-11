@@ -1,13 +1,12 @@
 #one page flask app
 from flask import Flask,url_for,render_template,send_file,request,jsonify
-from flask_bootstrap import Bootstrap
 from utils import Utils
 import pandas as pd
 import numpy as np
 import joblib
 
 app = Flask(__name__)
-Bootstrap(app)
+
 
 #FINALIZED MODEL IMPORTING
 loaded_model = joblib.load('finalized_model_RF.pkl')
