@@ -1,7 +1,6 @@
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from utils import Utils
-import pickle
 import joblib
 import pandas as pd
 import numpy as np
