@@ -4,8 +4,8 @@ from flask_bootstrap import Bootstrap
 from utils import Utils
 import pandas as pd
 import numpy as np
-import pickle
 import joblib
+
 app = Flask(__name__)
 Bootstrap(app)
 
@@ -58,4 +58,4 @@ def predict():
     return render_template('index.html', prediction_text=output)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
